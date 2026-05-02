@@ -1,0 +1,23 @@
+version: 1
+
+files:
+  - path: hk-prod.excalidraw
+    scope: { region: hk, environment: prod }
+
+enums:
+  sources:      [bloomberg, refinitiv, ice, direct]
+  types:        [trade, orderbook, greeks, nbbo]
+  exchanges:    [nyse, nasdaq, hkex, sehk]
+  environments: [prod, uat]
+  regions:      [hk, ny]
+
+conventions:
+  region_dimension: fill_color
+  env_dimension: frame
+  modifiers_in_label: true
+
+output:
+  formats: [yaml, json, csv]
+  per_file: false
+  merged: true
+  output_dir: generated
