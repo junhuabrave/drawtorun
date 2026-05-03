@@ -1,5 +1,5 @@
 ---
-description: Add a new NodeType end-to-end: model, parser classification, validator rules, and a fixture to exercise it.
+description: "Add a new NodeType end-to-end: model, parser classification, validator rules, and a fixture to exercise it."
 argument-hint: <node-type-name> --shape <rectangle|diamond|ellipse> --stroke <solid|dashed|dotted> [--is-sink]
 ---
 
